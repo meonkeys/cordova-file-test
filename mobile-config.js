@@ -1,7 +1,7 @@
 'use strict';
 
 App.info({
-  id: 'com.adammonsen.cordova-file-test',
+  id: 'com.adammonsen.app',
   name: 'AdamApp',
   description: 'Test cordorva native file operations',
   author: 'Adam Monsen',
@@ -9,4 +9,6 @@ App.info({
   website: 'http://adammonsen.com'
 });
 
-App.setPreference('AndroidExtraFilesystems', 'files,files-external');
+// these don't seem to make any difference
+//App.accessRule('*');
+//App.setPreference('AndroidExtraFilesystems', 'files,files-external');

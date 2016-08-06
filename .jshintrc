@@ -1,13 +1,16 @@
 {
-  "esnext":       false,    // Support ES2015.
+  "esnext":       true,     // Support ES2015.
   "quotmark":     "single", // Enforce single quotation marks.
   "globalstrict": true,     // Allow global "use strict" (also enables 'strict')
   "white":        true,     // Use strict whitespace and indentation rules.
   "nonbsp":       true,     // Warns about "non-breaking whitespace" characters.
+  "browser":      true,     // Recognize some web browser globals like "window", "document"
   "node":         true,     // Recognize Node.js globals.
   "mocha":        true,     // Recognize mocha test framework globals.
   "unused":       true,     // Warn about unused variables.
   "globals"       : [       // Custom globals.
-    "App"
+    "App",
+    "LocalFileSystem",
+    "cordova"
   ]
 }
