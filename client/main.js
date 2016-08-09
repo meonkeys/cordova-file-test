@@ -22,6 +22,7 @@ function reportError(err) {
 
 function readFile(file) {
   var reader = new FileReader();
+  // don't use arrow function here, we need the context provided by onloadend
   reader.onloadend = function() {
     console.log('read file! contents: ' + this.result);
   };
@@ -40,7 +41,7 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
 
     if (Meteor.isCordova) {
-      // aaaaaand do some other stuff
+      // aaaaaand read a file from external storage!
       const path = cordova.file.externalDataDirectory + 'a';
       window.resolveLocalFileSystemURL(path, fileEntry => {
         console.log('fileEntry: ', fileEntry);
