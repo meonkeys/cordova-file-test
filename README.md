@@ -4,6 +4,16 @@ Demo [Meteor](https://www.meteor.com) mobile app for [this stackoverflow questio
 
 The `master` branch contains original code referred to in the stackoverflow question. The `solution` branch contains working code.
 
+## How to read the code
+
+`client/main.js` contains all the interesting bits. Hints:
+
+1. `git show master:client/main.js`
+1. `git show solution:client/main.js`
+1. `git diff master:client/main.js solution:client/main.js`
+
+Check out `mobile-config.js`, too. Having the app `id` is handy, and setting the `AndroidExtraFilesystems` permission is necessary to be able to access external storage.
+
 ## Test
 
 1. Clone this repository, checkout `solution` branch.
