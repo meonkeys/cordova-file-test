@@ -9,6 +9,4 @@ App.info({
   website: 'http://adammonsen.com'
 });
 
-// these don't seem to make any difference
-//App.accessRule('*');
-//App.setPreference('AndroidExtraFilesystems', 'files,files-external');
+App.setPreference('AndroidExtraFilesystems', 'files,files-external');
