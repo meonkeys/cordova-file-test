@@ -1,6 +1,7 @@
 {
   "esnext":       true,     // Support ES2015.
   "quotmark":     "single", // Enforce single quotation marks.
+  "strict":       true,     // Require `use strict` pragma  in every file.
   "globalstrict": true,     // Allow global "use strict" (also enables 'strict')
   "white":        true,     // Use strict whitespace and indentation rules.
   "nonbsp":       true,     // Warns about "non-breaking whitespace" characters.
@@ -8,9 +9,11 @@
   "node":         true,     // Recognize Node.js globals.
   "mocha":        true,     // Recognize mocha test framework globals.
   "unused":       true,     // Warn about unused variables.
-  "globals"       : [       // Custom globals.
+  "predef"        : [       // Custom globals.
     "App",
     "LocalFileSystem",
+    "Meteor",
+    "nativePath",
     "cordova"
   ]
 }
